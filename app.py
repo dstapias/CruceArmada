@@ -116,7 +116,7 @@ if archivo_siif and archivo_reglas and archivo_directorio:
 
     # Buscar el encabezado correcto para el directorio
     for i, row in df_directorio_temp.iterrows():
-        if {'Id Entidad', 'Nit', 'Razón Social', 'Departamento', 'Municipio', 'Dirección', 'Código Postal', 'Teléfono', 'Fax', 'e-mail', 'Página Web', 'Ámbito SIIF'}.issubset(set(row.dropna().tolist())):
+        if {'Id Entidad', 'Nit', 'Razón Social', 'Departamento', 'Municipio', 'Dirección', 'Código Postal', 'Teléfono', 'Fax', 'e-mail', 'Página Web', 'Ámbito Convergencia', 'Ambito SIIF'}.issubset(set(row.dropna().tolist())):
             header_index_directorio = i
             break
 
